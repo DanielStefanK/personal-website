@@ -1,22 +1,26 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "personal-website",
+    title: "daniel stefan.",
+    author: "Daniel Stefan Klose",
+    siteUrl: `https://daniel-stefan.dev`,
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-image",
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-sharp",
+    `gatsby-plugin-fontawesome-css`,
     "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: `blog`,
+        path: `${__dirname}/content/blog/`,
       },
-      __key: "images",
     },
+    `gatsby-transformer-remark`,
   ],
 };

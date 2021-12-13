@@ -1,11 +1,12 @@
 import * as React from "react";
-
 import "./styles.scss";
 
-import Avatar from "../assests/images/confused-avatar.png";
+import Avatar from "../assests/images/avatar.png";
+
 import MainFrame from "../components/MainFrame.js";
+
 // markup
-const NotFoundPage = () => {
+const IndexPage = () => {
   return (
     <MainFrame>
       <section className="has-text-centered">
@@ -13,11 +14,11 @@ const NotFoundPage = () => {
       </section>
       <section className="section has-text-centered">
         <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">
-          This page was not found
+          Coming Soon...
         </h1>
       </section>
     </MainFrame>
   );
 };
 
-export default NotFoundPage;
+export default IndexPage;

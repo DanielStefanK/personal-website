@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "~bulma/sass/utilities/initial-variables";
+
+$dark-blue: rgb(43, 37, 100);
+$primary-blue: rgb(127, 184, 230);
+
+$title-color: $dark-blue;
+$primary: $primary-blue;
+$link: $blue;
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$dark: $grey-darker;
+$text: $grey-dark;
+
+$radius: 8px;
+
+@import "~bulma/bulma.sass";
+
+.section.is-primary {
+  background-color: $primary;
+}
+
+.section.call-to-action {
+  margin-top: 9rem;
+}
+
+.section.call-to-action .box {
+  padding: 3.5rem 2rem;
+  margin-top: -9rem;
+  background-color: #141c3a;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 0 0 1px #141c3a;
+}
+
+.section.call-to-action .title,
+.section.call-to-action p {
+  color: white;
+  margin-bottom: 0;
+}
+
+footer .social-icons a.button {
+  background-color: transparent;
+  color: white;
+  border-radius: 100%;
+  margin: 0 0.2rem;
+  height: 47px;
+  width: 47px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.section.is-primary .title {
+  color: #fff;
+}
+
+.section.is-primary .subtitle {
+  color: #fff;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "europa", sans-serif;
+}
