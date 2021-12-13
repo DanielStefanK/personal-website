@@ -1,6 +1,6 @@
 ---
 title: Reverse SSH tunnel as an alternative to a dynamic DNS
-date: 2021-12-13T12:53:17.576Z
+date: 2020-02-17T12:53:17.576Z
 update: ""
 description: Ever had the problem that you want to expose a service to the
   public from you home network but you had some obstacle between you and the
