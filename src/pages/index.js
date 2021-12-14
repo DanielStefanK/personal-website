@@ -4,17 +4,6 @@ import "./styles.scss";
 import Avatar from "../assests/images/avatar.png";
 
 import MainFrame from "../components/MainFrame.js";
-import {
-  faBug,
-  faCode,
-  faCodeBranch,
-  faLaptopCode,
-  faProjectDiagram,
-  faSave,
-  faTerminal,
-} from "@fortawesome/free-solid-svg-icons";
-import IconWall from "../components/IconWall";
-import { faCodepen } from "@fortawesome/free-brands-svg-icons";
 import Last6BlogPosts from "../components/Last6BlogsPosts";
 import { Link } from "gatsby";
 
@@ -42,23 +31,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className="hero-foot">
-          <div className="container">
-            <IconWall
-              icons={[
-                faCodeBranch,
-                faSave,
-                faCodepen,
-                faLaptopCode,
-                faProjectDiagram,
-                faBug,
-                faCode,
-                faTerminal,
-              ]}
-            />
-          </div>
-        </div>
-        <section className="section is-medium is-primary has-text-centered is-long mt-6">
+        <section className="section is-medium animate is-primary has-text-centered is-long mt-6">
           <div className="container">
             <div className="columns is-centered">
               <div className="column is-three-fifths">
