@@ -1,7 +1,7 @@
 ---
 title: Functional components in Vue
 date: 2020-04-02T11:55:18.649Z
-update: ""
+update: 2020-04-02T11:55:18.649Z
 description: Here I explain to you what functional components are and when to use them
 featureImg: title.png
 ---

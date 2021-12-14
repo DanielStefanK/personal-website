@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 date: 2020-02-10T12:49:09.004Z
-update: ""
+update: 2020-02-10T12:49:09.004Z
 description: Hello World! Finally I'm creating my personal blog using React,
   Gatsby and Netlify. This is going to be awesome and I'm really looking forward
   to programm all this stuff.

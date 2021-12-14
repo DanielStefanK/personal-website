@@ -12,6 +12,9 @@ const Last6BlogPosts = () => {
         nodes {
           id
           timeToRead
+          fields {
+            slug
+          }
           frontmatter {
             title
             date
@@ -39,6 +42,7 @@ const Last6BlogPosts = () => {
                 }
                 description={item.frontmatter.description}
                 title={item.frontmatter.title}
+                link={item.fields.slug}
               />
             </div>
           );
