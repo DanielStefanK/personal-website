@@ -49,7 +49,7 @@ const Contact = () => {
                   />
                 </section>
                 <p className="title is-1">Contact me</p>
-                <div className="columns is-mobile">
+                <div className="columns py-3 px-3">
                   <div className="column is-half is-offset-one-quarter">
                     <form
                       name="contact"
