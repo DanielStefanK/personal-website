@@ -1,6 +1,8 @@
 import React from "react";
 import MainFrame from "../components/MainFrame";
 
+import "./styles.scss";
+
 import Avatar from "../assests/images/wave-avatar.png";
 
 const ThankYou = () => {

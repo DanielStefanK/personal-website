@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import MainFrame from "../components/MainFrame";
 
+import "./styles.scss";
+
 import Avatar from "../assests/images/wave-avatar.png";
 import { navigate } from "gatsby";
 

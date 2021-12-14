@@ -5,6 +5,8 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faClock, faEdit } from "@fortawesome/free-solid-svg-icons";
 
+import "../pages/styles.scss";
+
 const Post = (props) => {
   const page = props.data.markdownRemark;
   const meta = page.frontmatter;
