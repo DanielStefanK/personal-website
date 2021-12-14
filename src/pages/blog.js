@@ -2,9 +2,6 @@ import * as React from "react";
 import "./styles.scss";
 
 import "./styles.scss";
-
-import Avatar from "../assests/images/avatar.png";
-
 import MainFrame from "../components/MainFrame.js";
 import { graphql, useStaticQuery } from "gatsby";
 import PreviewCard from "../components/PreviewCard";

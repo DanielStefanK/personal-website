@@ -1,14 +1,23 @@
 import * as React from "react";
 import "./styles.scss";
 
-import Avatar from "../assests/images/avatar.png";
-
 import MainFrame from "../components/MainFrame.js";
 import Last6BlogPosts from "../components/Last6BlogsPosts";
-import { Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 // markup
 const IndexPage = () => {
+  const { file } = useStaticQuery(graphql`
+    {
+      file(relativePath: { eq: "images/avatar.png" }) {
+        childImageSharp {
+          gatsbyImageData(height: 400)
+        }
+      }
+    }
+  `);
+
   return (
     <MainFrame>
       <section className="hero is-white has-text-centered">
@@ -22,10 +31,10 @@ const IndexPage = () => {
                 <h2 className="subtitle is-size-4-desktop">
                   I code useful things, and I love what I do.
                 </h2>
-                <img
+                <GatsbyImage
                   className="avatar"
                   alt="Daniel Stefan's Avatar"
-                  src={Avatar}
+                  image={file.childImageSharp.gatsbyImageData}
                 />
               </div>
             </div>

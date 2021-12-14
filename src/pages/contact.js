@@ -3,10 +3,20 @@ import MainFrame from "../components/MainFrame";
 
 import "./styles.scss";
 
-import Avatar from "../assests/images/wave-avatar.png";
-import { navigate } from "gatsby";
+import { graphql, navigate, useStaticQuery } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Contact = () => {
+  const { file } = useStaticQuery(graphql`
+    {
+      file(relativePath: { eq: "images/wave-avatar.png" }) {
+        childImageSharp {
+          gatsbyImageData(height: 350)
+        }
+      }
+    }
+  `);
+
   function encode(data) {
     return Object.keys(data)
       .map(
@@ -43,11 +53,11 @@ const Contact = () => {
             <div className="media">
               <div className="media-content">
                 <section className="has-text-centered">
-                  <img
+                  <GatsbyImage
                     className="avatar"
-                    width="200"
+                    style={{ marginTop: "-100px" }}
                     alt="Daniel Stefan's Avatar"
-                    src={Avatar}
+                    image={file.childImageSharp.gatsbyImageData}
                   />
                 </section>
                 <p className="title is-1">Contact me</p>

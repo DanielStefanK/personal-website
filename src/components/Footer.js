@@ -8,20 +8,29 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-import Logo from "../assests/images/logo.png";
 import { INSTA_LINK, LINKEDIN_LINK, TWITTER_LINK } from "../constats";
-import { Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Footer = () => {
+  const { file } = useStaticQuery(graphql`
+    {
+      file(relativePath: { eq: "images/logo.png" }) {
+        childImageSharp {
+          gatsbyImageData(height: 70)
+        }
+      }
+    }
+  `);
+
   return (
     <footer className="section is-primary is-small has-text-centered">
       <div className="container is-narrow">
         <Link className="logo" to="/">
-          <img
-            src={Logo}
+          <GatsbyImage
+            image={file.childImageSharp.gatsbyImageData}
+            backgroundColor={false}
             alt="Daniel Stefan Klose | Full-Stack Developer"
-            height="70"
-            width="70"
           />
         </Link>
         <div className="columns is-centered">
