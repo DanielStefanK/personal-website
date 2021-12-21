@@ -12,7 +12,7 @@ featureImg: vitetypescirptreact.png
 
 [Typescript](https://www.typescriptlang.org) brings lots and lots of advantages. Errors can be caught early in the development process by the types in react. This avoids a lot of errors. Another good reason for using typescript is the developer experience it brings. By using typescript in your project you can get better code completion and write faster and more bug free code.
 
-![Vite Logo](68747470733a2f2f766974656a732e6465762f6c6f676f2e737667.svg "Vite Logo")
+![Vite Logo](vite-logo.png "Vite Logo")
 
 # Initial setup using vite
 
@@ -28,19 +28,17 @@ Where as `my-project` can be the name of the project you are trying to create.
 
 The development server can be run using `npm run dev`
 
-``
-
 ![ESLint Logo](favicon.512x512.png "ESLint Logo")
 
 # Installing ESLint
 
-[ESLint](https://eslint.org) statically analyzes your code to find problems quickly. ESLint is integrated with most text editors and you can run ESLint as part of your continuous integration pipeline. 
+[ESLint](https://eslint.org) statically analyzes your code to find problems quickly. ESLint is integrated with most text editors and you can run ESLint as part of your continuous integration pipeline.
 
 Vite already comes with an ESLint config. You could keep using this config, but for the propose of this blog post I will show you how you can install it by your self.
 
-First remove all prior configs. These can be a `.eslintrc.js` or `.eslintrc.json` file. The config for ESLint can also be inside the `package.json` file. 
+First remove all prior configs. These can be a `.eslintrc.js` or `.eslintrc.json` file. The config for ESLint can also be inside the `package.json` file.
 
-Next use `npm install eslint --save-dev` to install ESLint as a dev dependency in your project. Afterwards run `npx eslint --init` to initialise the ESLint-Config. You can follow the command line and select which options are right for you. 
+Next use `npm install eslint --save-dev` to install ESLint as a dev dependency in your project. Afterwards run `npx eslint --init` to initialise the ESLint-Config. You can follow the command line and select which options are right for you.
 
 
 
@@ -48,7 +46,7 @@ Next use `npm install eslint --save-dev` to install ESLint as a dev dependency i
 
 # Installing Prettier
 
-[Prettier](https://prettier.io) is an opinionated code formatter. With this all your code style in your project can be unified. This saves time, energy and your code becomes easier to read and understand. 
+[Prettier](https://prettier.io) is an opinionated code formatter. With this all your code style in your project can be unified. This saves time, energy and your code becomes easier to read and understand.
 
 First of all you need to add Prettier as a dev dependency by using `npm install --save-dev --save-exact prettier`. Afterwards create an empty config file by runnung `echo {}> .prettierrc.json` or create it manually.
 
