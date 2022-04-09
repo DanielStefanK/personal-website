@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+require("node-fetch");
 
 const url = `https://www.instagram.com/graphql/query/?query_hash=396983faee97f4b49ccbe105b4daf7a0&variables={"id":"36560492","first":12}`;
 
@@ -33,7 +33,7 @@ async function getPosts() {
   return posts;
 }
 
-export default async function handler(req, res) {
+module.exports = function handler(req, res) {
   const posts = await getPosts();
   res.status(200).json(posts);
-}
+};
