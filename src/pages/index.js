@@ -4,20 +4,10 @@ import "./styles.scss";
 import MainFrame from "../components/MainFrame.js";
 import Last6BlogPosts from "../components/Last6BlogsPosts";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 // markup
 const IndexPage = () => {
-  const { file } = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "images/avatar.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 400)
-        }
-      }
-    }
-  `);
-
   return (
     <MainFrame>
       <section className="hero is-white has-text-centered">
@@ -31,10 +21,12 @@ const IndexPage = () => {
                 <h2 className="subtitle is-size-4-desktop">
                   I code useful things, and I love what I do.
                 </h2>
-                <GatsbyImage
+                <StaticImage
                   className="avatar"
                   alt="Daniel Stefan's Avatar"
-                  image={file.childImageSharp.gatsbyImageData}
+                  placeholder="blurred"
+                  blurredOptions={{ width: 50 }}
+                  src="../assets/images/avatar.png"
                 />
               </div>
             </div>

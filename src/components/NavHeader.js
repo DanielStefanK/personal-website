@@ -1,28 +1,19 @@
-import { graphql, Link, useStaticQuery } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
 
 const NavHeader = () => {
   const [isBurgerActive, setBurgerActive] = useState(false);
 
-  const { file } = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "images/logo.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 28)
-        }
-      }
-    }
-  `);
-
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link className="navbar-item" to="/">
-          <GatsbyImage
-            image={file.childImageSharp.gatsbyImageData}
-            backgroundColor={false}
+          <StaticImage
+            placeholder="blurred"
+            blurredOptions={{ width: 10 }}
             alt="Daniel Stefan Klose | Full-Stack Developer"
+            src="../assets/images/logo.png"
           />
         </Link>
 
