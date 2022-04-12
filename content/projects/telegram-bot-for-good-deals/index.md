@@ -6,7 +6,6 @@ description: This project was born out of the desire to get goo deals.
 featureImg: kleinanzeigen.jpg
 tags: []
 ---
-
 This project was born out of the desire to get good deals.
 
 You can see the sources on Github [here](https://github.com/DanielStefanK/kleinanzeigen-alert).
@@ -22,7 +21,7 @@ there was a ne ad for a query i would define. That's when i stared to build
 
 It is a small [telegram](https://telegram.org/) bot where you can save queries and
 it sends you all new ads that match hat query.
-It is written in [go](https://golang.org/) and usesed web crawling to
+It is written in [go](https://golang.org/) and used web crawling to
 fetch new ads from Kleinanzeigen.
 
 # Where can I try it
