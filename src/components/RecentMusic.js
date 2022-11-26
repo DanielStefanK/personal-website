@@ -78,7 +78,7 @@ const RecentMusic = () => {
                     {mostRecent.isPlaying && (
                       <img
                         style={{ marginLeft: "1rem" }}
-                        src="https://www.last.fm/static/images/icons/now_playing_grey_12.b4158f8790d0.gif"
+                        src={"/now-playing.gif"}
                       />
                     )}
                   </p>
