@@ -33,7 +33,7 @@ const buildBlog = (edges, createPage) => {
 };
 
 const buildProjects = (projects, createPage) => {
-  projects.forEach((p) => {
+  projects.forEach((page) => {
     console.log(
       `Creating project page ${JSON.stringify(page.node.frontmatter)}`
     );
