@@ -2,8 +2,9 @@ import * as React from "react";
 import "./styles.scss";
 
 import MainFrame from "../components/MainFrame.js";
+import RecentMusic from "../components/RecentMusic.js";
 import Last6BlogPosts from "../components/Last6BlogsPosts";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 // markup
@@ -28,6 +29,7 @@ const IndexPage = () => {
                   blurredOptions={{ width: 50 }}
                   src="../assets/images/avatar.png"
                 />
+                <RecentMusic />
               </div>
             </div>
           </div>
